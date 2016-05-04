@@ -1,98 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <title>
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
-    rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-glyphicons.css"
-    rel="stylesheet">
-  </head>
-  
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active">
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-lg pull-right btn-link">Click!</a>
-        </div>
-      </nav>
-      <div class="page-header">
-        <h1>
-          Top of the mornin' to ya!
-        </h1>
-      </div>
-      <div>
-        Some interesting content
-      </div>
+<% include partial/header.ejs %>
       <div class="jumbotron">
-        <form>
-          <div class="form-group">
-            <label>
-              Keyword
-            </label>
-            <input type="text" class="form-control" placeholder="something something">
-            <div class="form-group">
-              <label>
-                Site
-              </label>
-              <input type="text" class="form-control" placeholder="http://codeforhuman.com">
-            </div>
-          </div>
-        </form>
-        <div class="form-group">
-          <label>
-            Language
-          </label>
-          <select class="form-control">
-            <option value="pizza">
-              Pizza
-            </option>
-            <option value="salad">
-              Salad
-            </option>
-            <option value="pizzasalad">
-              Pizza and Salad
-            </option>
-          </select>
-        </div>
-        <p>
-        </p>
-        <div class="form-group">
-          <label>
-            Page Range&nbsp;
-            <br>
-          </label>
-          <select class="form-control">
-            <option value="pizza">
-              Pizza
-            </option>
-            <option value="salad">
-              Salad
-            </option>
-            <option value="pizzasalad">
-              Pizza and Salad
-            </option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-lg btn-success">
-          Giveitatry!
-        </button>
+        <% include form.ejs %>
       </div>
       <%if (searchResult) { %>
 		<div class="panel panel-success">
@@ -117,18 +25,7 @@
 	        </div>
 	      </div>
 	  <% } %>
-      <ul class="list-group">
-      </ul>
       <div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-    >
-    </script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
-    >
-    </script>
-  </body>
-
-</html>
-
+<% include partial/footer.ejs %>
